@@ -11,7 +11,7 @@ export const CustomButton = styled.TouchableOpacity`
 `;
 
 export const ButtonText = styled.Text`
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Poppins_600SemiBold";
   color: #ffffff;
 `;
