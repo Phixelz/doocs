@@ -9,3 +9,7 @@ Doocs.
 - Expo
 - TypeScript
 - Styled Components
+
+## Screens
+
+![App Screenshot](.github/screens.png)
