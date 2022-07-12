@@ -3,13 +3,13 @@ import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.View`
   flex: 1;
-  padding: 24px;
+  padding: 32px 16px 0;
   background-color: #fcfdff;
 `;
 
 export const Wrapper = styled.View`
   justify-content: center;
-  margin-top: 40%;
+  margin-top: 32%;
 `;
 
 export const Icon = styled(Feather)`
@@ -48,28 +48,39 @@ export const Description = styled.Text`
 
 export const TextInput = styled.TextInput`
   padding: 12px 12px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   border-radius: 8px;
   border-width: 1px;
-  border-color: rgba(57, 106, 178, 0.25);
+  background-color: #ffffff;
+  border-color: rgba(57, 106, 178, 0.4);
 `;
 
 export const ColabArea = styled.View`
   flex-direction: row;
+  align-items: center;
   padding: 24px;
   background-color: rgba(57, 106, 178, 0.1);
   margin-bottom: 24px;
   border-radius: 8px;
 `;
 
-export const TitleColab = styled.Text`
-  font-size: 17px;
-  font-family: "Poppins_600SemiBold";
+export const Content = styled.View``;
+
+export const Info = styled.Text`
+  font-size: 15px;
+  font-family: "Poppins_400Regular";
   color: #396ab2;
 `;
 
+export const TitleColab = styled.Text`
+  font-size: 18px;
+  font-family: "Poppins_600SemiBold";
+  color: #396ab2;
+  line-height: 24px;
+`;
+
 export const UserIcon = styled(Feather)`
-  font-size: 24px;
+  font-size: 32px;
   color: #396ab2;
   margin-right: 12px;
 `;

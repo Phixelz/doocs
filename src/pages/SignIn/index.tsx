@@ -8,6 +8,8 @@ import {
   Description,
   TextInput,
   ColabArea,
+  Content,
+  Info,
   TitleColab,
   UserIcon,
 } from "./styles";
@@ -16,9 +18,7 @@ import { Button } from "../../components/Button";
 export function SignIn() {
   return (
     <Container>
-      <Title>
-        doocs.
-      </Title>
+      <Title>doocs.</Title>
 
       <Wrapper>
         <Icon name="folder" />
@@ -31,16 +31,14 @@ export function SignIn() {
         </Description>
 
         <ColabArea>
-            <UserIcon name="user" />
-          <TitleColab>
-            Área do Colaborador
-          </TitleColab>
+          <UserIcon name="user" />
+          <Content>
+          <TitleColab>Área do Colaborador</TitleColab>
+          <Info>Digite seus dados de acesso</Info>
+          </Content>
         </ColabArea>
 
-        <TextInput
-          placeholder="Nome completo"
-          placeholderTextColor="#87A0C6"
-        />
+        <TextInput placeholder="Nome completo" placeholderTextColor="#87A0C6" />
 
         <TextInput
           secureTextEntry
@@ -48,9 +46,7 @@ export function SignIn() {
           placeholderTextColor="#87A0C6"
         />
 
-        <Button
-          title="Entrar" />
-
+        <Button activeOpacity={0.5} type="disabled" title="Entrar" />
       </Wrapper>
     </Container>
   );
