@@ -3,8 +3,8 @@ import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.View`
   flex: 1;
-  padding: 24px;
-  background-color: #ffffff;
+  padding: 24px 16px;
+  background-color: #fcfdff;
 `;
 
 export const Wrapper = styled.View`
@@ -40,8 +40,8 @@ export const SubTitle = styled.Text`
 `;
 
 export const Description = styled.Text`
-  font-size: 16px;
-  font-family: "Poppins_500Medium";
+  font-size: 17px;
+  font-family: "Poppins_400Regular";
   color: #396ab2;
   margin-bottom: 24px;
 `;
