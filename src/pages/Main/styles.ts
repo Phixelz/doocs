@@ -73,9 +73,3 @@ export const SectionTitle = styled.Text`
   color: #396ab2;
   line-height: 28px;
 `;
-
-export const Grid = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
