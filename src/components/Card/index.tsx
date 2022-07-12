@@ -21,6 +21,7 @@ export function Card({ title, subtitle, ...rest }: CardProps) {
         <Icon name="folder" />
         <CardTitle>{title}</CardTitle>
       </Header>
+      
       <Footer>
         <CardSubTitle>{subtitle}</CardSubTitle>
       </Footer>
