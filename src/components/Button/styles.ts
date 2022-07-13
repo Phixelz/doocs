@@ -5,7 +5,6 @@ interface ButtonProps {
   type: "default" | "disabled";
 }
 
-
 export const CustomButton = styled.TouchableOpacity<ButtonProps>`
   flex-direction: row;
   padding: 16px;
@@ -18,8 +17,6 @@ export const CustomButton = styled.TouchableOpacity<ButtonProps>`
   opacity: 0.5;
  `}
 `;
-
-
 
 export const ButtonText = styled.Text`
   font-size: 16px;
