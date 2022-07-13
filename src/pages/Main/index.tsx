@@ -26,7 +26,7 @@ export function Main() {
           </Avatar>
 
           <User>
-            <Title>Olá, Rafael!</Title>
+            <Title>Olá, Rafael =)</Title>
             <SubTitle>UI Developer</SubTitle>
           </User>
         </Content>

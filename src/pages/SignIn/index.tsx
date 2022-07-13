@@ -46,7 +46,10 @@ export function SignIn() {
           placeholderTextColor="#87A0C6"
         />
 
-        <Button activeOpacity={0.5} type="disabled" title="Entrar" />
+        <Button 
+          type="disabled" 
+          title="Entrar" 
+        />
       </Wrapper>
     </Container>
   );
