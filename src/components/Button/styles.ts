@@ -5,7 +5,10 @@ interface ButtonProps {
   type: "default" | "disabled";
 }
 
-export const CustomButton = styled.TouchableOpacity<ButtonProps>`
+export const CustomButton = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.9,
+})<ButtonProps>`
+
   flex-direction: row;
   padding: 16px;
   align-items: center;
