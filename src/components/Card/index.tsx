@@ -17,7 +17,7 @@ interface CardProps extends TouchableOpacityProps {
 
 export function Card({ title, subtitle, ...rest }: CardProps) {
   return (
-    <Container activeOpacity={0.8} {...rest}>
+    <Container {...rest}>
       <Header>
         <Icon name="folder" />
         <CardTitle>{title}</CardTitle>

@@ -1,13 +1,13 @@
-import styled, { css } from "styled-components/native";
+import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
-export const Container = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.9,
-})`
+export const Container = styled.View`
   flex-direction: row;
-  padding: 16px 0;
+  padding: 16px;
   margin-bottom: 16px;
+  border-radius: 8px;
   align-items: center;
+  background-color: ${({ theme }) => theme.colors.secondary_light};
 `;
 
 export const Icon = styled(Feather)`
@@ -16,21 +16,14 @@ export const Icon = styled(Feather)`
 `;
 
 export const Menu = styled.View`
-padding: 0 12px;
 `;
 
-export const MenuView = styled.View`
-`;
+export const IconView = styled.View``;
 
-export const Title = styled.Text<Props>`
+export const Title = styled.Text`
   font-size: 16px;
   font-family: "Poppins_600SemiBold";
   color: ${({ theme }) => theme.colors.primary};
-
-  ${(props) => props.type === 'info' && css `
-  font-size: 18px;
-  line-height: 24px;
- `}
 `;
 
 export const SubTitle = styled.Text`
@@ -39,12 +32,7 @@ export const SubTitle = styled.Text`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-export const IconArea = styled.View<Props>`
-  background-color: ${({ theme }) => theme.colors.secondary_light};
+export const IconArea = styled.View`
   border-radius: 8px;
   padding: 12px;
-
-  ${(props) => props.type === 'info' && css `
-    display: none;
- `}
 `;

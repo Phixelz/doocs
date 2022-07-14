@@ -1,7 +1,9 @@
-import styled, { css } from "styled-components/native";
+import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
-export const Container = styled.TouchableOpacity`
+export const Container = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.9,
+})`
   padding: 24px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.colors.secondary_light};
@@ -14,7 +16,6 @@ export const Header = styled.View`
 export const Icon = styled(Feather)`
   font-size: 24px;
   color: ${({ theme }) => theme.colors.primary};
-  padding-right: 8px;
 `;
 
 export const Footer = styled.View``;
@@ -24,6 +25,7 @@ export const CardTitle = styled.Text`
   line-height: 32px;
   font-family: "Poppins_600SemiBold";
   color: ${({ theme }) => theme.colors.primary};
+  margin: 0 8px;
 `;
 
 export const CardSubTitle = styled.Text`

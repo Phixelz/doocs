@@ -1,28 +1,27 @@
 import React from "react";
-import { TouchableOpacityProps } from "react-native";
 import {
   Container,
   Title,
   SubTitle,
   Icon,
-  MenuView,
+  IconView,
   IconArea,
   Menu,
 } from "./styles";
 
-interface Props extends TouchableOpacityProps {
+interface InfoProps {
   title: string;
   subtitle: string;
 }
 
-export function CardList({ type, title, subtitle, ...rest }: Props) {
+export function Info({ title, subtitle }: InfoProps) {
   return (
-    <Container {...rest}>
-      <MenuView>
-        <IconArea type={type}>
-          <Icon name="folder" />
+    <Container>
+      <IconView>
+        <IconArea>
+          <Icon name="alert-circle" />
         </IconArea>
-      </MenuView>
+      </IconView>
 
       <Menu>
         <Title>{title}</Title>
