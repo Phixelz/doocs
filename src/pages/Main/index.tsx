@@ -20,6 +20,7 @@ import {
 } from "../Main/styles";
 import { Card } from "../../components/Card";
 import { CardList } from "../../components/CardList";
+import { Info } from "../../components/Info";
 
 export function Main() {
   const [visibleModal, setVisibleModal] = useState(false);
@@ -63,38 +64,32 @@ export function Main() {
           </HeaderList>
 
           <ContainerList>
-            <CardList
-              type="info"
+          <Info
               title="Doocs pendentes"
               subtitle="Envie todos os doocs pendentes"
             />
 
             <CardList
-              type="default"
               title="Dooc 1"
               subtitle="Clique para acessar o dooc"
             />
 
             <CardList
-              type="default"
               title="Dooc 2"
               subtitle="Clique para acessar o dooc"
             />
 
             <CardList
-              type="default"
               title="Dooc 3"
               subtitle="Clique para acessar o dooc"
             />
 
             <CardList
-              type="default"
               title="Dooc 4"
               subtitle="Clique para acessar o dooc"
             />
 
             <CardList
-              type="default"
               title="Dooc 5"
               subtitle="Clique para acessar o dooc"
             />
@@ -102,25 +97,22 @@ export function Main() {
         </ModalList>
 
         <CardList
-          type="default"
           title="Doocs"
           subtitle="Enviados: 4"
         />
 
         <CardList
-          type="default"
+
           title="Doocs"
           subtitle="Em análise: 4"
         />
 
         <CardList
-          type="default"
           title="Doocs"
           subtitle="Aprovados: 4"
         />
 
         <CardList
-          type="default"
           title="Doocs"
           subtitle="Reprovados: 1"
         />

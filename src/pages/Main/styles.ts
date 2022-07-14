@@ -48,7 +48,9 @@ export const User = styled.View`
   padding: 0 12px;
 `;
 
-export const Avatar = styled.View`
+export const Avatar = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.9,
+})`
   width: 40px;
   height: 40px;
   border-radius: 24px;
@@ -81,13 +83,13 @@ export const SectionTitle = styled.Text`
 `;
 
 export const HeaderList = styled.View`
+  align-self: flex-start;
   padding: 24px 16px 0;
 `;
 
 export const Close = styled(Feather)`
   font-size: 24px;
   color: ${({ theme }) => theme.colors.primary};
-  align-self: flex-start;
 `;
 
 export const ContainerList = styled.ScrollView`
