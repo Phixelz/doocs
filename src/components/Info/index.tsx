@@ -18,9 +18,7 @@ export function Info({ title, subtitle }: InfoProps) {
   return (
     <Container>
       <IconView>
-        <IconArea>
           <Icon name="alert-circle" />
-        </IconArea>
       </IconView>
 
       <Menu>
