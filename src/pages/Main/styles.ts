@@ -66,11 +66,6 @@ export const Name = styled.Text`
   color: ${({ theme }) => theme.colors.secondary};
 `;
 
-export const SectionView = styled.ScrollView.attrs({
-  showsVerticalScrollIndicator: false,
-})`
-`;
-
 export const SectionCards = styled.View`
   margin: 24px 0 16px;
 `;
@@ -99,4 +94,7 @@ export const ContainerList = styled.ScrollView`
 `;
 
 export const ModalList = styled.Modal`
+`;
+
+export const List = styled.View`
 `;
