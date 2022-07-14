@@ -33,8 +33,8 @@ export function SignIn() {
         <ColabArea>
           <UserIcon name="user" />
           <Content>
-          <TitleColab>Área do Colaborador</TitleColab>
-          <Info>Digite seus dados de acesso</Info>
+            <TitleColab>Área do Colaborador</TitleColab>
+            <Info>Digite seus dados de acesso</Info>
           </Content>
         </ColabArea>
 

@@ -9,7 +9,7 @@ export const Container = styled.View`
 
 export const Wrapper = styled.View`
   justify-content: center;
-  margin-top: 35%;
+  margin-top: 40%;
 `;
 
 export const Icon = styled(Feather)`
@@ -25,18 +25,10 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-export const Doocs = styled.Image`
-  width: 380px;
-  height: 380px;
-  align-self: flex-start;
-  margin: 0 60px;
-`;
-
 export const SubTitle = styled.Text`
   font-size: 22px;
   font-family: "Poppins_700Bold";
-  margin-bottom: 8px;
-  color: #396ab2;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Description = styled.Text`
@@ -64,23 +56,24 @@ export const ColabArea = styled.View`
   margin-bottom: 24px;
 `;
 
-export const Content = styled.View``;
+export const Content = styled.View`
+padding: 0 12px;
+`;
 
-export const Info = styled.Text`
-  font-size: 15px;
-  font-family: "Poppins_400Regular";
+export const UserIcon = styled(Feather)`
+  font-size: 28px;
   color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const TitleColab = styled.Text`
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Poppins_600SemiBold";
   color: ${({ theme }) => theme.colors.primary};
   line-height: 24px;
 `;
 
-export const UserIcon = styled(Feather)`
-  font-size: 32px;
+export const Info = styled.Text`
+  font-size: 14px;
+  font-family: "Poppins_400Regular";
   color: ${({ theme }) => theme.colors.primary};
-  margin-right: 12px;
 `;

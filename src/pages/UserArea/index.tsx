@@ -1,5 +1,4 @@
 import React from "react";
-import { CardList } from "../../components/CardList";
 import {
   Container,
   Header,
@@ -12,6 +11,7 @@ import {
   User,
   Content,
 } from "./styles";
+import { CardList } from "../../components/CardList";
 
 export function UserArea() {
   return (
@@ -34,24 +34,28 @@ export function UserArea() {
         <Icon name="log-out" />
       </UserCard>
 
-      <CardList 
-        title="Dados Pessoais" 
-        subtitle="Lorem ipsum dolor" 
+      <CardList
+        type="default"
+        title="Dados Pessoais"
+        subtitle="Acesse seus dados pessoais"
       />
 
-      <CardList 
-        title="Holerite" 
-        subtitle="Lorem ipsum dolor" 
+      <CardList
+        type="default"
+        title="Holerite"
+        subtitle="Acesse os detalhes do seu holerite"
       />
 
-      <CardList 
-        title="Guia Organizacional" 
-        subtitle="Lorem ipsum dolor" 
+      <CardList
+        type="default"
+        title="Guia Organizacional"
+        subtitle="Acesse o seu guia organizacional"
       />
 
-      <CardList 
-        title="Informações da empresa" 
-        subtitle="Lorem ipsum dolor" 
+      <CardList
+        type="default"
+        title="Configurações"
+        subtitle="Altere as configurações do app"
       />
     </Container>
   );

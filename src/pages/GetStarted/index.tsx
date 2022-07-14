@@ -33,6 +33,7 @@ export function GetStarted() {
         </Description>
 
         <Button
+          type="default"
           title="Começar" />
       </Wrapper>
 

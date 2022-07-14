@@ -9,7 +9,7 @@ export const Container = styled.View`
 
 export const Wrapper = styled.View`
   flex: 1;
-  margin-top: 5%;
+  margin-top: 10%;
 `;
 
 export const Icon = styled(Feather)`
@@ -35,7 +35,6 @@ export const Doocs = styled.Image`
 export const SubTitle = styled.Text`
   font-size: 22px;
   font-family: "Poppins_700Bold";
-  margin-bottom: 8px;
   color: ${({ theme }) => theme.colors.primary};
 `;
 

@@ -8,18 +8,20 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
+  flex-direction: row;
+  align-items: center;
   padding: 24px 0 0;
   margin-bottom: 24px;
 `;
 
 export const UserCard = styled.View`
-  background-color: ${({ theme }) => theme.colors.secondary_light};
   padding: 24px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  background-color: ${({ theme }) => theme.colors.secondary_light};
 `;
 
 export const Title = styled.Text`
@@ -46,7 +48,7 @@ export const Content = styled.View`
 `;
 
 export const User = styled.View`
-  margin-left: 12px;
+  padding: 0 12px;
 `;
 
 export const Avatar = styled.View`
@@ -60,7 +62,7 @@ export const Avatar = styled.View`
 
 export const Name = styled.Text`
   font-size: 18px;
-  line-height: 24px;
+  line-height: 44px;
   font-family: "Poppins_400Regular";
   color: ${({ theme }) => theme.colors.secondary};
 `;

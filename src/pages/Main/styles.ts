@@ -8,8 +8,7 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
-  padding: 24px 0 0 0;
-  margin-bottom: 24px;
+  padding: 24px 0;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -25,7 +24,7 @@ export const Logo = styled.Text`
 export const Title = styled.Text`
   font-size: 20px;
   font-family: "Poppins_700Bold";
-  line-height: 24px;
+  line-height: 28px;
   color: ${({ theme }) => theme.colors.primary};
 `;
 
@@ -43,11 +42,10 @@ export const Icon = styled(Feather)`
 export const Content = styled.View`
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-`
+`;
 
 export const User = styled.View`
-  margin-left: 12px;
+  padding: 0 12px;
 `;
 
 export const Avatar = styled.View`
@@ -62,17 +60,41 @@ export const Avatar = styled.View`
 export const Name = styled.Text`
   font-size: 18px;
   font-family: "Poppins_400Regular";
-  line-height: 24px;
+  line-height: 44px;
   color: ${({ theme }) => theme.colors.secondary};
 `;
 
+export const SectionView = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+})`
+`;
+
 export const SectionCards = styled.View`
-  margin: 24px 0;
+  margin: 24px 0 16px;
 `;
 
 export const SectionTitle = styled.Text`
   font-size: 20px;
-  font-family: "Poppins_700Bold";
+  font-family: "Poppins_600SemiBold";
   color: ${({ theme }) => theme.colors.primary};
   line-height: 28px;
+`;
+
+export const HeaderList = styled.View`
+  padding: 24px 16px 0;
+`;
+
+export const Close = styled(Feather)`
+  font-size: 24px;
+  color: ${({ theme }) => theme.colors.primary};
+  align-self: flex-start;
+`;
+
+export const ContainerList = styled.ScrollView`
+  flex: 1;
+  padding: 24px 16px;
+  background-color: ${({ theme }) => theme.colors.secondary};
+`;
+
+export const ModalList = styled.Modal`
 `;
