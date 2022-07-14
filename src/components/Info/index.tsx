@@ -5,7 +5,6 @@ import {
   SubTitle,
   Icon,
   IconView,
-  IconArea,
   Menu,
 } from "./styles";
 

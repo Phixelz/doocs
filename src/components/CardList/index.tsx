@@ -15,11 +15,11 @@ interface Props extends TouchableOpacityProps {
   subtitle: string;
 }
 
-export function CardList({ type, title, subtitle, ...rest }: Props) {
+export function CardList({ title, subtitle, ...rest }: Props) {
   return (
     <Container {...rest}>
       <MenuView>
-        <IconArea type={type}>
+        <IconArea>
           <Icon name="folder" />
         </IconArea>
       </MenuView>
