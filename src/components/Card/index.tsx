@@ -7,7 +7,8 @@ import {
   CardTitle,
   CardSubTitle,
   Icon,
-} from "../Card/styles";
+  ProgressBar,
+} from "./styles";
 
 interface CardProps extends TouchableOpacityProps {
   title: string;
@@ -21,10 +22,16 @@ export function Card({ title, subtitle, ...rest }: CardProps) {
         <Icon name="folder" />
         <CardTitle>{title}</CardTitle>
       </Header>
-      
+
       <Footer>
         <CardSubTitle>{subtitle}</CardSubTitle>
       </Footer>
+
+      <ProgressBar
+        styleAttr="Horizontal"
+        indeterminate={false}
+        progress={0.5}
+      />
     </Container>
   );
 }

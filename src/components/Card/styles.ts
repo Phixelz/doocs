@@ -1,10 +1,10 @@
-import styled from "styled-components/native";
+import styled, { css } from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.TouchableOpacity`
-  padding: 16px;
+  padding: 24px;
   border-radius: 8px;
-  background-color: rgba(57, 106, 178, 0.1);
+  background-color: ${({ theme }) => theme.colors.secondary_light};
 `;
 
 export const Header = styled.View`
@@ -13,21 +13,26 @@ export const Header = styled.View`
 
 export const Icon = styled(Feather)`
   font-size: 24px;
-  color: #396ab2;
-  margin-right: 12px;
+  color: ${({ theme }) => theme.colors.primary};
+  padding-right: 8px;
 `;
 
 export const Footer = styled.View``;
 
 export const CardTitle = styled.Text`
   font-size: 20px;
-  font-family: "Poppins_700Bold";
-  color: #396ab2;
+  line-height: 32px;
+  font-family: "Poppins_600SemiBold";
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const CardSubTitle = styled.Text`
   font-size: 16px;
   font-family: "Poppins_400Regular";
-  color: #396ab2;
-  margin-bottom: 16px;
+  color: ${({ theme }) => theme.colors.primary};
+`;
+
+export const ProgressBar = styled.ProgressBarAndroid`
+  margin: 8px 0;
+  color: ${({ theme }) => theme.colors.primary};
 `;
