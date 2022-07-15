@@ -66,8 +66,7 @@ export const Name = styled.Text`
   color: ${({ theme }) => theme.colors.secondary};
 `;
 
-export const SectionCards = styled.View`
-  margin: 24px 0 16px;
+export const Section = styled.View`
 `;
 
 export const SectionTitle = styled.Text`
@@ -96,5 +95,10 @@ export const ContainerList = styled.ScrollView`
 export const ModalList = styled.Modal`
 `;
 
-export const List = styled.View`
+export const SectionList = styled.SectionList`
+  margin: 24px 0 0;
+`;
+
+export const StatusList = styled.SafeAreaView`
+  flex: 1;
 `;

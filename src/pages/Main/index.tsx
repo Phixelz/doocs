@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FlatList } from "react-native";
+
 import {
   Container,
   Logo,
@@ -11,38 +11,39 @@ import {
   Name,
   Content,
   User,
-  SectionCards,
+  Section,
   SectionTitle,
   ContainerList,
   HeaderList,
   Close,
   ModalList,
-  List,
+  StatusList,
+  SectionList,
 } from "../Main/styles";
 import { Card } from "../../components/Card";
 import { CardList } from "../../components/CardList";
 import { Info } from "../../components/Info";
 
-const DOOCS = [
+const Doocs = [
   {
     id: "1",
     title: "Doocs",
-    subtitle: "Enviados: 4",
+    subtitle: "Enviados: 1",
   },
   {
     id: "2",
     title: "Doocs",
-    subtitle: "Em análise: 4",
+    subtitle: "Em análise: 2",
   },
   {
     id: "3",
     title: "Doocs",
-    subtitle: "Aprovados: 4",
+    subtitle: "Aprovados: 1",
   },
   {
     id: "4",
     title: "Doocs",
-    subtitle: "Reprovados: 4",
+    subtitle: "Reprovados: 1",
   },
 ];
 
@@ -114,21 +115,31 @@ export function Main() {
         </ContainerList>
       </ModalList>
 
-      <SectionCards>
-        <SectionTitle>Doocs</SectionTitle>
-        <SubTitle>Visualize o processo dos doocs</SubTitle>
-      </SectionCards>
 
-      <FlatList
-        data={DOOCS}
-        renderItem={({ item }) => {
-          return (
-            <List>
-              <CardList title={item.title} subtitle={item.subtitle} />
-            </List>
-          );
-        }}
-      />
+      <StatusList>
+        <SectionList
+          sections={[
+            {
+              sectiontitle: "Doocs",
+              sectionsubtitle: "Acesse o status dos doocs",
+              data: Doocs
+            }
+          ]}
+          renderItem={({ item }) => (
+            <CardList
+              title={item.title}
+              subtitle={item.subtitle}
+            />
+          )}
+
+          renderSectionHeader={({ section }) => (
+            <Section>
+              <SectionTitle>{section.sectiontitle}</SectionTitle>
+              <SubTitle>{section.sectionsubtitle}</SubTitle>
+            </Section>
+          )}
+        />
+      </StatusList>
     </Container>
   );
 }
