@@ -66,8 +66,7 @@ export const Name = styled.Text`
   color: ${({ theme }) => theme.colors.secondary};
 `;
 
-export const Section = styled.View`
-`;
+export const Section = styled.View``;
 
 export const SectionTitle = styled.Text`
   font-size: 20px;
@@ -92,8 +91,7 @@ export const ContainerList = styled.ScrollView`
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
-export const ModalList = styled.Modal`
-`;
+export const ModalList = styled.Modal``;
 
 export const SectionList = styled.SectionList`
   margin: 24px 0 0;
