@@ -35,25 +35,21 @@ export function UserArea() {
       </UserCard>
 
       <CardList
-        type="default"
         title="Dados Pessoais"
         subtitle="Acesse seus dados pessoais"
       />
 
       <CardList
-        type="default"
         title="Holerite"
         subtitle="Acesse os detalhes do seu holerite"
       />
 
       <CardList
-        type="default"
         title="Guia Organizacional"
         subtitle="Acesse o seu guia organizacional"
       />
 
       <CardList
-        type="default"
         title="Configurações"
         subtitle="Altere as configurações do app"
       />

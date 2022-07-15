@@ -36,7 +36,6 @@ export function GetStarted() {
           type="default"
           title="Começar" />
       </Wrapper>
-
     </Container>
   );
 }

@@ -38,7 +38,10 @@ export function SignIn() {
           </Content>
         </ColabArea>
 
-        <TextInput placeholder="Nome completo" placeholderTextColor="#87A0C6" />
+        <TextInput
+          placeholder="Nome completo"
+          placeholderTextColor="#87A0C6"
+        />
 
         <TextInput
           secureTextEntry
@@ -46,9 +49,9 @@ export function SignIn() {
           placeholderTextColor="#87A0C6"
         />
 
-        <Button 
-          type="disabled" 
-          title="Entrar" 
+        <Button
+          type="disabled"
+          title="Entrar"
         />
       </Wrapper>
     </Container>
