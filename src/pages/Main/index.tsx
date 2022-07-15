@@ -131,7 +131,6 @@ export function Main() {
               subtitle={item.subtitle}
             />
           )}
-
           renderSectionHeader={({ section }) => (
             <Section>
               <SectionTitle>{section.sectiontitle}</SectionTitle>
