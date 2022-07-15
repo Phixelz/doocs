@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
   Container,
   Logo,
@@ -114,7 +113,6 @@ export function Main() {
           />
         </ContainerList>
       </ModalList>
-
 
       <StatusList>
         <SectionList
