@@ -3,9 +3,12 @@ import {
   Container,
   Logo,
   Wrapper,
-  Title,
-  SubTitle,
   TextInput,
+  ColabArea,
+  Content,
+  Info,
+  TitleColab,
+  UserIcon,
 } from "./styles";
 import { Button } from "../../components/Button";
 
@@ -15,13 +18,14 @@ export function SignIn() {
       <Logo>doocs.</Logo>
 
       <Wrapper>
-        <Title>
-          Acesso do Colaborador
-        </Title>
+        <ColabArea>
+          <UserIcon name="user" />
+          <Content>
+            <TitleColab>Área do Colaborador</TitleColab>
+            <Info>Digite seus dados de acesso</Info>
+          </Content>
+        </ColabArea>
 
-        <SubTitle>
-          Digite seus dados de acesso
-        </SubTitle>
         <TextInput
           placeholder="Nome completo"
           placeholderTextColor="#87A0C6"
