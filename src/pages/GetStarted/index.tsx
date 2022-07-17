@@ -16,12 +16,11 @@ export function GetStarted() {
         doocs.
       </Logo>
 
-      <Doocs
-        resizeMode="contain"
-        source={require("../../assets/peep.png")}
-      />
-
       <Wrapper>
+        <Doocs
+          resizeMode="contain"
+          source={require("../../assets/peep.png")}
+        />
         <Title>
           Nunca foi tão fácil gerenciar doocs de colaboradores.
         </Title>

@@ -12,6 +12,7 @@ import {
   Content,
 } from "./styles";
 import { CardList } from "../../components/CardList";
+import { Divider } from "../../components/Divider";
 
 export function UserArea() {
   return (
@@ -42,15 +43,21 @@ export function UserArea() {
         subtitle="Acesse seus dados pessoais"
       />
 
+      <Divider />
+
       <CardList
         title="Holerite"
         subtitle="Acesse os detalhes do seu holerite"
       />
 
+      <Divider />
+
       <CardList
         title="Guia Organizacional"
-        subtitle="Acesse o seu guia organizacional"
+        subtitle="Acesse o guia organizacional"
       />
+
+      <Divider />
 
       <CardList
         title="Configurações"

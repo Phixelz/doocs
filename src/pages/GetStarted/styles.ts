@@ -31,9 +31,9 @@ export const Title = styled.Text`
 `;
 
 export const Doocs = styled.Image`
-width: 332px;
-height: 332px;
-margin-top: 35%;
+width: 330px;
+height: 250px;
+margin-bottom: 16px;
 `;
 
 export const SubTitle = styled.Text`
