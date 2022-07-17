@@ -1,10 +1,10 @@
 import React from "react";
-import { Container } from "./styles";
+import { Horizontal } from "./styles";
 
 export function Divider() {
     return (
-      <Container>
-      </Container>
+      <Horizontal>
+      </Horizontal>
     );
   }
   
