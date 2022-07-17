@@ -1,38 +1,37 @@
 import React from "react";
 import {
   Container,
+  Logo,
   Doocs,
   Wrapper,
-  Icon,
   Title,
   SubTitle,
-  Description,
 } from "../GetStarted/styles";
 import { Button } from "../../components/Button";
 
 export function GetStarted() {
   return (
     <Container>
-      <Title>
+      <Logo>
         doocs.
-      </Title>
+      </Logo>
 
       <Doocs
         resizeMode="contain"
-        source={require("../../assets/folder.png")}
+        source={require("../../assets/peep.png")}
       />
 
       <Wrapper>
-        <Icon name="folder" />
-        <SubTitle>
+        <Title>
           Nunca foi tão fácil gerenciar doocs de colaboradores.
+        </Title>
+
+        <SubTitle>
+          Gerencie doocs de contratação, dados de pagamentos, entre outros.
         </SubTitle>
 
-        <Description>
-          Gerencie doocs de contratação, dados de pagamento e outros doocs.
-        </Description>
-
         <Button
+          activeOpacity={0.9}
           type="default"
           title="Começar" />
       </Wrapper>

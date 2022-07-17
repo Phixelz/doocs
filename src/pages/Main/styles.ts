@@ -3,7 +3,7 @@ import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.View`
   flex: 1;
-  padding: 32px 16px;
+  padding: 40px 16px;
   background-color: ${({ theme }) => theme.colors.background};
 `;
 
@@ -12,6 +12,11 @@ export const Header = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+`;
+
+export const Peep = styled.Image`
+width: 48px;
+height: 48px;
 `;
 
 export const Logo = styled.Text`
@@ -45,25 +50,18 @@ export const Content = styled.View`
 `;
 
 export const User = styled.View`
-  padding: 0 12px;
+  margin: 0 8px;
 `;
 
 export const Avatar = styled.TouchableOpacity.attrs({
   activeOpacity: 0.9,
 })`
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 24px;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary_light};
   align-items: center;
   justify-content: center;
-`;
-
-export const Name = styled.Text`
-  font-size: 18px;
-  font-family: "Poppins_400Regular";
-  line-height: 44px;
-  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const Section = styled.View``;
@@ -93,7 +91,9 @@ export const ContainerList = styled.ScrollView`
 
 export const ModalList = styled.Modal``;
 
-export const SectionList = styled.SectionList`
+export const SectionList = styled.SectionList.attrs({
+  showsVerticalScrollIndicator: false,
+})`
   margin: 24px 0 0;
 `;
 

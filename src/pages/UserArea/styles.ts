@@ -14,6 +14,11 @@ export const Header = styled.View`
   margin-bottom: 24px;
 `;
 
+export const Peep = styled.Image`
+width: 48px;
+height: 48px;
+`;
+
 export const UserCard = styled.View`
   padding: 24px;
   flex-direction: row;
@@ -48,14 +53,14 @@ export const Content = styled.View`
 `;
 
 export const User = styled.View`
-  padding: 0 12px;
+  margin: 0 8px;
 `;
 
 export const Avatar = styled.View`
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 24px;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary_light};
   align-items: center;
   justify-content: center;
 `;

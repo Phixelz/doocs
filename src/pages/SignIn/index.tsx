@@ -1,11 +1,10 @@
 import React from "react";
 import {
   Container,
+  Logo,
   Wrapper,
-  Icon,
   Title,
   SubTitle,
-  Description,
   TextInput,
   ColabArea,
   Content,
@@ -18,22 +17,21 @@ import { Button } from "../../components/Button";
 export function SignIn() {
   return (
     <Container>
-      <Title>doocs.</Title>
+      <Logo>doocs.</Logo>
 
       <Wrapper>
-        <Icon name="folder" />
-        <SubTitle>
+        <Title>
           Nunca foi tão fácil gerenciar doocs de colaboradores.
-        </SubTitle>
+        </Title>
 
-        <Description>
-          Gerencie doocs de contratação, dados de pagamento e outros doocs.
-        </Description>
+        <SubTitle>
+          Gerencie doocs de contratação, dados de pagamentos, entre outros.
+        </SubTitle>
 
         <ColabArea>
           <UserIcon name="user" />
           <Content>
-            <TitleColab>Área do Colaborador</TitleColab>
+            <TitleColab>Acesso do Colaborador</TitleColab>
             <Info>Digite seus dados de acesso</Info>
           </Content>
         </ColabArea>
@@ -50,6 +48,7 @@ export function SignIn() {
         />
 
         <Button
+          disabled={true}
           type="disabled"
           title="Entrar"
         />
