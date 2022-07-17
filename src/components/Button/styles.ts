@@ -5,10 +5,7 @@ interface ButtonProps {
   type: "default" | "disabled";
 }
 
-export const CustomButton = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.9,
-})<ButtonProps>`
-
+export const CustomButton = styled.TouchableOpacity<ButtonProps>`
   flex-direction: row;
   padding: 16px;
   align-items: center;
@@ -16,7 +13,7 @@ export const CustomButton = styled.TouchableOpacity.attrs({
   border-radius: 8px;
   background-color: ${({ theme }) => theme.colors.primary};
 
- ${(props) => props.type === 'disabled' && css `
+ ${(props) => props.type === 'disabled' && css`
   opacity: 0.5;
  `}
 `;
