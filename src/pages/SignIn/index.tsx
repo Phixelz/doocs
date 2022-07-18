@@ -37,7 +37,7 @@ export function SignIn() {
         <Button
           activeOpacity={0.9}
           type="link"
-          title="Recuperar palavra-secreta?"
+          title="Recuperar palavra-secreta"
         />
 
         <TextInput
