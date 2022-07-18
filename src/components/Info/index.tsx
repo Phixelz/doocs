@@ -17,9 +17,11 @@ interface InfoProps {
 export function Info({ type, icon, title, subtitle }: InfoProps) {
   return (
     <Container type={type}>
-      <Icon type={type} name={icon} />
+      <Icon
+        type={type}
+        name={icon}
+      />
       <Content>
-
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
       </Content>
