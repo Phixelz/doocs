@@ -2,6 +2,8 @@ import React from "react";
 import {
   Container,
   Logo,
+  Header,
+  Peeps,
   Wrapper,
   TextInput,
   ColabArea,
@@ -15,7 +17,13 @@ import { Button } from "../../components/Button";
 export function SignIn() {
   return (
     <Container>
-      <Logo>doocs.</Logo>
+      <Header>
+        <Logo>doocs.</Logo>
+        <Peeps
+          resizeMode="contain"
+          source={require("../../assets/peep.png")}
+        />
+      </Header>
 
       <Wrapper>
         <ColabArea>
@@ -27,13 +35,19 @@ export function SignIn() {
         </ColabArea>
 
         <TextInput
-          placeholder="Nome completo"
+          placeholder="Digite seu e-mail"
           placeholderTextColor="#87A0C6"
+        />
+
+        <Button
+          activeOpacity={0.9}
+          type="link"
+          title="Recuperar palavra-secreta?"
         />
 
         <TextInput
           securyTextEntry
-          placeholder="Código de acesso"
+          placeholder="Digite sua palavra-secreta"
           placeholderTextColor="#87A0C6"
         />
 

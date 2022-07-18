@@ -1,21 +1,32 @@
 import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
-  padding: 40px 16px;
   background-color: ${({ theme }) => theme.colors.background};
 `;
 
+export const Header = styled.View`
+flex-direction: row;
+align-items: center;
+background-color: ${({ theme }) => theme.colors.secondary_light};
+padding: 100px 16px 0;
+margin-bottom: 56px;
+`;
+
+export const Peeps = styled.Image`
+width: 350px;
+height: 220px;
+align-self: flex-end;
+`;
+
 export const Wrapper = styled.View`
-flex: 1;
-justify-content: flex-end;
+  padding: 0 16px;
 `;
 
 export const Logo = styled.Text`
-  align-self: center;
   font-family: "Poppins_700Bold";
-  font-size: 24px;
+  font-size: 28px;
   color: ${({ theme }) => theme.colors.primary};
 `;
 

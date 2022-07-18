@@ -30,7 +30,7 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-export const Doocs = styled.Image`
+export const Peeps = styled.Image`
 width: 330px;
 height: 250px;
 margin-bottom: 16px;

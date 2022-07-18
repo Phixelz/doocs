@@ -2,7 +2,7 @@ import React from "react";
 import {
   Container,
   Logo,
-  Doocs,
+  Peeps,
   Wrapper,
   Title,
   SubTitle,
@@ -17,7 +17,7 @@ export function GetStarted() {
       </Logo>
 
       <Wrapper>
-        <Doocs
+        <Peeps
           resizeMode="contain"
           source={require("../../assets/peep.png")}
         />
