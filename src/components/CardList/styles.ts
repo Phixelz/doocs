@@ -1,10 +1,9 @@
-import styled, {css} from "styled-components/native";
+import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.TouchableOpacity.attrs({
   activeOpacity: 0.9,
 })`
-
   flex-direction: row;
   padding: 12px 0;
   align-items: center;
@@ -16,11 +15,8 @@ export const Icon = styled(Feather)`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-export const Menu = styled.View`
+export const Content = styled.View`
   padding: 0 12px;
-`;
-
-export const MenuView = styled.View`
 `;
 
 export const Title = styled.Text`

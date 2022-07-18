@@ -19,6 +19,7 @@ export function Info({ type, icon, title, subtitle }: InfoProps) {
     <Container type={type}>
       <Icon type={type} name={icon} />
       <Content>
+
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
       </Content>

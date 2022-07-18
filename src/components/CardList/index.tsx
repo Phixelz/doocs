@@ -2,12 +2,11 @@ import React from "react";
 import { TouchableOpacityProps } from "react-native";
 import {
   Container,
+  Icon,
+  IconArea,
+  Content,
   Title,
   SubTitle,
-  Icon,
-  MenuView,
-  IconArea,
-  Menu,
 } from "./styles";
 
 interface Props extends TouchableOpacityProps {
@@ -18,16 +17,14 @@ interface Props extends TouchableOpacityProps {
 export function CardList({ title, subtitle, ...rest }: Props) {
   return (
     <Container {...rest}>
-      <MenuView>
-        <IconArea>
-          <Icon name="folder" />
-        </IconArea>
-      </MenuView>
+      <IconArea>
+        <Icon name="folder" />
+      </IconArea>
 
-      <Menu>
+      <Content>
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
-      </Menu>
+      </Content>
     </Container>
   );
 }

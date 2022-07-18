@@ -7,9 +7,9 @@ interface ButtonProps {
 
 export const CustomButton = styled.TouchableOpacity<ButtonProps>`
   flex-direction: row;
-  padding: 16px;
   align-items: center;
   justify-content: flex-end;
+  padding: 16px;
   border-radius: 8px;
 
   ${(props) => props.type === 'default' && css`
