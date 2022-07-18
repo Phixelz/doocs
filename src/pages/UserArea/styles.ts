@@ -14,9 +14,9 @@ export const Header = styled.View`
   margin-bottom: 24px;
 `;
 
-export const Peep = styled.Image`
-width: 48px;
-height: 48px;
+export const Peeps = styled.Image`
+  width: 48px;
+  height: 48px;
 `;
 
 export const UserCard = styled.View`
@@ -49,7 +49,6 @@ export const Icon = styled(Feather)`
 
 export const Content = styled.View`
   flex-direction: row;
-  align-items: center;
 `;
 
 export const User = styled.View`
@@ -63,11 +62,4 @@ export const Avatar = styled.View`
   background-color: ${({ theme }) => theme.colors.secondary_light};
   align-items: center;
   justify-content: center;
-`;
-
-export const Name = styled.Text`
-  font-size: 18px;
-  line-height: 44px;
-  font-family: "Poppins_400Regular";
-  color: ${({ theme }) => theme.colors.secondary};
 `;

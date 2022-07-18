@@ -1,3 +1,4 @@
+import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
 export const Container = styled.ScrollView`
@@ -7,11 +8,10 @@ export const Container = styled.ScrollView`
 
 export const Header = styled.View`
 flex-direction: row;
-justify-content: space-between;
 align-items: center;
 background-color: ${({ theme }) => theme.colors.secondary_light};
 padding: 100px 24px 0;
-margin-bottom: 56px;
+margin-bottom: ${RFValue(56)}px;
 `;
 
 export const Peeps = styled.Image`
@@ -32,7 +32,7 @@ export const Logo = styled.Text`
 
 export const TextInput = styled.TextInput`
   padding: 12px 12px;
-  margin: 0 0 16px;
+  margin: 0 0 24px;
   border-radius: 8px;
   border-width: 1px;
   background-color: ${({ theme }) => theme.colors.secondary};

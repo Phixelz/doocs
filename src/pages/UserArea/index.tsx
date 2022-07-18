@@ -6,7 +6,7 @@ import {
   Title,
   SubTitle,
   Avatar,
-  Peep,
+  Peeps,
   Icon,
   User,
   Content,
@@ -24,7 +24,7 @@ export function UserArea() {
       <UserCard>
         <Content>
           <Avatar>
-            <Peep
+            <Peeps
               resizeMode="contain"
               source={require("../../assets/avatar.png")}
             />

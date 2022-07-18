@@ -7,7 +7,7 @@ import {
   SubTitle,
   Icon,
   Avatar,
-  Peep,
+  Peeps,
   Content,
   User,
   Section,
@@ -55,7 +55,7 @@ export function Main() {
       <Header>
         <Content>
           <Avatar>
-            <Peep
+            <Peeps
               resizeMode="contain"
               source={require("../../assets/avatar.png")}
             />

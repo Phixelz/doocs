@@ -14,9 +14,9 @@ export const Header = styled.View`
   justify-content: space-between;
 `;
 
-export const Peep = styled.Image`
-width: 48px;
-height: 48px;
+export const Peeps = styled.Image`
+  width: 48px;
+  height: 48px;
 `;
 
 export const Logo = styled.Text`

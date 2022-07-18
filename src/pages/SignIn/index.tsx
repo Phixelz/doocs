@@ -29,22 +29,22 @@ export function SignIn() {
           subtitle="Digite seus dados de acesso"
         />
 
-          <TextInput
-            placeholder="Digite seu e-mail"
-            placeholderTextColor="#87A0C6"
-          />
+        <TextInput
+          placeholder="Digite seu e-mail"
+          placeholderTextColor="#87A0C6"
+        />
 
-          <Button
-            activeOpacity={0.9}
-            type="link"
-            title="Recuperar palavra-secreta?"
-          />
+        <Button
+          activeOpacity={0.9}
+          type="link"
+          title="Recuperar palavra-secreta?"
+        />
 
-          <TextInput
-            securyTextEntry
-            placeholder="Digite sua palavra-secreta"
-            placeholderTextColor="#87A0C6"
-          />
+        <TextInput
+          securyTextEntry
+          placeholder="Digite sua palavra-secreta"
+          placeholderTextColor="#87A0C6"
+        />
 
         <Button
           disabled={true}
