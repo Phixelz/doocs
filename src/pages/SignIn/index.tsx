@@ -6,13 +6,9 @@ import {
   Peeps,
   Wrapper,
   TextInput,
-  ColabArea,
-  Content,
-  Info,
-  TitleColab,
-  UserIcon,
 } from "./styles";
 import { Button } from "../../components/Button";
+import { Info } from "../../components/Info";
 
 export function SignIn() {
   return (
@@ -26,30 +22,29 @@ export function SignIn() {
       </Header>
 
       <Wrapper>
-        <ColabArea>
-          <UserIcon name="user" />
-          <Content>
-            <TitleColab>Área do Colaborador</TitleColab>
-            <Info>Digite seus dados de acesso</Info>
-          </Content>
-        </ColabArea>
-
-        <TextInput
-          placeholder="Digite seu e-mail"
-          placeholderTextColor="#87A0C6"
+        <Info
+          type="signin"
+          icon="user"
+          title="Área do colaborador"
+          subtitle="Digite seus dados de acesso"
         />
 
-        <Button
-          activeOpacity={0.9}
-          type="link"
-          title="Recuperar palavra-secreta?"
-        />
+          <TextInput
+            placeholder="Digite seu e-mail"
+            placeholderTextColor="#87A0C6"
+          />
 
-        <TextInput
-          securyTextEntry
-          placeholder="Digite sua palavra-secreta"
-          placeholderTextColor="#87A0C6"
-        />
+          <Button
+            activeOpacity={0.9}
+            type="link"
+            title="Recuperar palavra-secreta?"
+          />
+
+          <TextInput
+            securyTextEntry
+            placeholder="Digite sua palavra-secreta"
+            placeholderTextColor="#87A0C6"
+          />
 
         <Button
           disabled={true}

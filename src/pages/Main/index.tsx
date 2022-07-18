@@ -86,6 +86,8 @@ export function Main() {
 
         <ContainerList>
           <Info
+            type="default"
+            icon="info"
             title="Doocs pendentes"
             subtitle="Envie todos os doocs pendentes"
           />
