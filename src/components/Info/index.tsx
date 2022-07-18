@@ -1,29 +1,27 @@
 import React from "react";
 import {
   Container,
+  Content,
   Title,
   SubTitle,
   Icon,
-  IconView,
-  Menu,
 } from "./styles";
 
 interface InfoProps {
+  type: "default" | "signin";
   title: string;
   subtitle: string;
+  icon: string;
 }
 
-export function Info({ title, subtitle }: InfoProps) {
+export function Info({ type, icon, title, subtitle }: InfoProps) {
   return (
-    <Container>
-      <IconView>
-          <Icon name="alert-circle" />
-      </IconView>
-
-      <Menu>
+    <Container type={type}>
+      <Icon type={type} name={icon} />
+      <Content>
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
-      </Menu>
+      </Content>
     </Container>
   );
 }
