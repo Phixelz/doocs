@@ -10,6 +10,10 @@ Doocs.
 - TypeScript
 - Styled Components
 
+## Libs
+
+- Styled Components
+
 ## Screens
 
 ![App Screenshot](.github/screens.png)
