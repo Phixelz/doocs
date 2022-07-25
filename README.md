@@ -8,7 +8,6 @@ Doocs.
 
 - Expo
 - TypeScript
-- Styled Components
 
 ## Libs
 
